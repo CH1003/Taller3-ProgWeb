@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hospital Metropolitano 506 es una clínica líder en Costa Rica en especialidades médicas, medicina
+    general, nutrición, psicología, psiquiatría, cirugía ambulatoria, ortopedia, fisioterapia, cardiología, entre otras.">
+    <meta name="keywords"
+        content="Hospital, Costa Rica, Salud, Bienestar, Medicina General, Nutrición, Psicología, Psiquiatría, Cirugía Ambulatoria, Ortopedia, Fisioterapia, Cardiología, Laboratorio, Citas, Online">
+    <meta name="robots" content="index, nofollow">
+    <meta name="author" content="Isaias Chaves">
+    <title>Citas - Hospital Metropolitano 506</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logohospital506.svg" alt="Logo del Hospital 506" class="logo"></a>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link"><button>Cerrar Sesión</button></a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="consultar" class="form">
+            <form action="confirmacion.html" method="post" id="formAgendarCita">
+                <h1 class="form-h">Solicitud de cita</h1>
+                <label for="dep">Departamento:</label>
+                <select name="dep" id="dep" class="input-block">
+                    <option value="Medicina General">Medicina General</option>
+                    <option value="Nutrición">Nutrición</option>
+                    <option value="Cirugía Ambulatoria">Cirugía Ambulatoria</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Ortopedia">Ortopedia</option>
+                    <option value="Fisioterapia">Fisioterapia</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Laboratorio">Laboratorio</option>
+                </select>
+                <label for="doc">Doctor:</label>
+                <select name="doc" id="doc" class="input-block">
+                    <option value="Luis Meza">Luis Meza</option>
+                    <option value="José Villalobos">José Villalobos</option>
+                    <option value="Gerardo Chávez">Gerardo Chávez</option>
+                    <option value="Elí Montero">Elí Montero</option>
+                    <option value="Bill Kutner">Bill Kutner</option>
+                </select>
+                <label for="fecha">Fecha</label><input type="date" name="fecha" id="fecha" class="input-block" required>
+                <p>Horarios Disponibles:</p>
+                  <input type="radio" id="13" name="hora" value="13:00" checked>
+                  <label for="13">13:00</label><br>
+                  <input type="radio" id="14" name="hora" value="14:00">
+                  <label for="14">14:00</label><br>
+                  <input type="radio" id="15" name="hora" value="15:00">
+                  <label for="15">15:00</label><br>
+                <button type="submit" class="form-btn">Agendar Cita</button><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="contacto">
+            <article>
+                <h2>Contacto</h2>
+                <p>info@hospital506.com</p>
+                <p>Teléfono: 8888-8888</p>
+                <p>Emergencias: 8888-4444</p>
+            </article>
+
+            <article>
+                <h2>Redes Sociales</h2>
+                <a href="#"><img src="img/facebook.svg" alt="Ícono de Facebook"></a>
+                <a href="#"><img src="img/instagram.svg" alt="Ícono de Instagram"></a>
+                <a href="#"><img src="img/youtube.svg" alt="Ícono de YouTube"></a>
+            </article>
+            <article>
+                <h2>Dirección</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4042248.3550832393!2d-87.05350571629755!3d8.351566599337348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f92e56221acc925%3A0x6254f72535819a2b!2sCosta%20Rica!5e0!3m2!1sen!2scr!4v1626728917524!5m2!1sen!2scr"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+        </section>
+        <p id="copyright">Copyright &copy; 2021 Hospital Metropolitano 506, San José, Costa Rica</p>
+    </footer>
+</body>
+
+</html>
