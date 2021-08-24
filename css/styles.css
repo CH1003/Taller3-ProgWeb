@@ -198,7 +198,7 @@ nav li button:hover {
     object-fit: scale-down;
   }
   .nav-menu {
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 5rem;
     flex-direction: column;
